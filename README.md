@@ -8,7 +8,7 @@ Learn how SOC analysts investigate Windows security event logs and track potenti
 ## Tools Used
 * **Windows 10 Virtual Machine**
 * **Windows Event Viewer (`eventvwr.msc`)**
-* **System Monitor (Sysmon v15.21)**
+* **System Monitor (Sysmon)**
 
 ---
 
