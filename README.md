@@ -25,8 +25,8 @@ Learn how SOC analysts investigate Windows security event logs and track potenti
 * **Sysmon Event ID**: `1` (Process Creation)
 * **Analysis**: Detected administrative user creation for `analyst_test`. Sysmon captured the exact process execution lineage showing `cmd.exe` executing `net1.exe` with the full command-line arguments.
 
-![New User Security Event](event_4720.png)
-![Sysmon Process Creation](sysmon_event_1.png)
+![New User Security Event](images/event_4720.png)
+![Sysmon Process Creation](images/sysmon_event_1.png)
 
 ---
 
@@ -36,7 +36,7 @@ Learn how SOC analysts investigate Windows security event logs and track potenti
 * **Logon Type**: `2` (Interactive)
 * **Analysis**: Captured failed logon attempts against the newly created account `analyst_test` from the local interactive console.
 
-![Failed Login Event](event_4625.png)
+![Failed Login Event](images/event_4625.png)
 
 ---
 
@@ -44,7 +44,7 @@ Learn how SOC analysts investigate Windows security event logs and track potenti
 * **Security Event ID**: `4740`
 * **Analysis**: Account `analyst_test` was automatically locked out after exceeding the 3-failed-attempt security policy threshold.
 
-![Account Lockout Event](event_4740.png)
+![Account Lockout Event](images/event_4740.png)
 
 ---
 
@@ -53,7 +53,7 @@ Learn how SOC analysts investigate Windows security event logs and track potenti
 * **Logon Type**: `2` (Interactive Console)
 * **Analysis**: Verified successful authentication for `WINDOWS10\analyst_test` after administrative account unlock (`net user analyst_test /active:yes`).
 
-![Successful Logon Event](event_4624.png)
+![Successful Logon Event](images/event_4624.png)
 
 ---
 
